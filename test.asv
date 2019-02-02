@@ -1,0 +1,7 @@
+initilize
+j=sqrt(-1);
+z=exp(j*(-pi:pi/100:pi));
+eval('plot(z)');
+set(gcf,'units','normalized','position',[0.2,0.3,0.2,0.2]);
+title('results by eval');
+axis(
