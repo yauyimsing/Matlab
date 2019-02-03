@@ -1,12 +1,13 @@
 function [] = test()
-
-a=0:0.002:1;
-b=humps(a);
-plot(a,b);
-p=fminsearch(@humps, .5);
-p
+filewrite();
 end
 
-function [ b ]=humps( x )
-b=1./((x-.3).^2+.01)+1./((x-.9).^2+.04)-6;
+function []=filewrite()
+fid=fopen('tp.txt','wt');
+fprintf(fid,'this is the database of class 1.\n');
+name='sally';types=1;x=3.1;y=45;answer='yes';
+fprintf(fid,'%s type %u %f %u %s \n',name,types,x,y,answer);
+name='tom';types=1;x=2.5;y=20;answer='no';
+fprintf(fid,'%s type %u %f %u %s \n',name,types,x,y,answer);
+fclose(fid);
 end

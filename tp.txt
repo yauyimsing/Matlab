@@ -1,0 +1,3 @@
+this is the database of class 1.
+sally type 1 3.100000 45 yes 
+tom type 1 2.500000 20 no 

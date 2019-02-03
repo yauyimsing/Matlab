@@ -1,7 +1,10 @@
-initilize
-j=sqrt(-1);
-z=exp(j*(-pi:pi/100:pi));
-eval('plot(z)');
-set(gcf,'units','normalized','position',[0.2,0.3,0.2,0.2]);
-title('results by eval');
-axis(
+function [] = test()
+filewrite();
+end
+
+function []=filewrite()
+fid=fopen('tp.txt','wt');
+fprintf(fid,'this is the database of class 1.\n');
+name='sally';types=1;x=3.1;y=45;answer='yes';
+fprintf(fid
+end
